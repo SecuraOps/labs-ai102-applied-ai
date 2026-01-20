@@ -1,14 +1,8 @@
-resource "azurerm_resource_group" "this" {
-  name     = var.resource_group_name
-  location = var.location
-}
+module "ai_basics" {
+  source = "../modules/ai_basics"
 
-resource "azurerm_cognitive_account" "this" {
-  name                = var.name
-  location            = var.location
-  resource_group_name = azurerm_resource_group.this.name
-  kind                = "CognitiveServices"
-  sku_name            = "S0"
-
-  tags = var.tags
+  resource_group_name      = var.resource_group_name
+  cognitive_account_name   = var.cognitive_account_name
+  location                 = var.location
+  tags                     = var.tags
 }

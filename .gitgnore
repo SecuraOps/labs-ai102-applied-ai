@@ -1,0 +1,77 @@
+# =====================
+# Terraform
+# =====================
+**/terraform/.terraform/
+**/terraform/.terraform.lock.hcl
+**/.tfstate
+**/.tfstate.backup
+*.tfstate
+*.tfstate.backup
+*.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pycache/
+*.pytest_cache/
+*.env
+*.venv/
+env/
+venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =====================
+# Jupyter Notebooks
+# =====================
+.ipynb_checkpoints
+
+# =====================
+# Visual Studio Code
+# =====================
+.vscode/
+.history/
+
+# =====================
+# JetBrains IDEs (PyCharm, IntelliJ)
+# =====================
+.idea/
+
+# =====================
+# OS Generated Files
+# =====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================
+# Logs and temporary files
+# =====================
+*.log
+*.tmp
+*.bak
+
+# =====================
+# Generated / build files
+# =====================
+build/
+dist/
+*.egg-info/
+
+# =====================
+# Misc / Other
+# =====================
+.terraform.lock.hcl
+*.swp
